@@ -20,7 +20,7 @@ static const struct arg args[] = {
 /*  	{ netspeed_rx, 	" ▼ %sB/s | ", 	"enp8s0" },
         { netspeed_tx, 	" ▲ %sB/s | ",  "enp8s0" }, */
         { run_command,  "%s | ",        "cat /home/cirelon/.cache/torrent " },
-        { run_command, 	"%s | ",    	"/home/cirelon/.local/bin/forecast" },
+        { run_command, 	"%s | ",    	"bash ${XDG_CONFIG_HOME:-$HOME/.local}/bin/forecast" },
 	{ run_command, 	"📦 %s | ", 	"checkupdates | wc -l" },
         { run_command, 	"墳 %s | ",     "pamixer --get-volume-human" },
         { datetime, 	"%s", 		"%F - %T (%a)" },
